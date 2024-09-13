@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fontawesome Icon -->
+    <script src="https://kit.fontawesome.com/348c676099.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>hackflix</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class=" pt-3">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="feed.html">News Feed</a></li>
+                <li><a href="../login/login.html">Add News</a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron">
+            <h1>Hackflix Reporter</h1>
+            <p><i>Home</i></p>
+        </div>
+    </header>
+
+    <!-- Waves -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill=#16325B fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,176C672,203,768,213,864,181.3C960,149,1056,75,1152,42.7C1248,11,1344,21,1392,26.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    <main id="main">
+
+        <aside>
+            <article>
+                <img src="./images/hackflix.png" class="featured-image" alt="">
+            </article>
+        </aside>
+
+        <div id="content">
+            <article>
+                <h2><span>Tentang</span></h2>
+                <p></p>
+                <p>Selamat datang di Hackflix!</p>
+                <p>Hackflix adalah platform yang didedikasikan untuk menyajikan fakta-fakta menarik dan mendalam seputar dunia film. 
+                    Dari trivia yang jarang diketahui hingga detail di balik layar, Hackflix mengajak Anda untuk menjelajahi sisi lain dari film-film favorit Anda. 
+                    Dengan ribuan artikel, video, dan analisis mendalam, kami hadir untuk memperkaya pengalaman menonton Anda, 
+                    memberikan perspektif baru, dan membuka wawasan tentang karya-karya sinematik dari berbagai genre dan era.</p>
+                <p>Kami tidak hanya fokus pada film-film blockbuster, tetapi juga memberikan sorotan pada film-film independen, 
+                    dokumenter, dan karya sinematik dari berbagai belahan dunia yang mungkin belum pernah Anda dengar. 
+                    Dari wawancara eksklusif dengan sutradara dan aktor hingga ulasan tentang teknik pembuatan film, 
+                    Hackflix hadir untuk para pecinta film yang ingin memperdalam pengetahuan mereka dan menemukan hal-hal baru dari industri perfilman global. 
+                    Kami juga menyediakan ruang diskusi untuk komunitas penggemar film, memungkinkan Anda berbagi opini, ulasan, dan rekomendasi dengan sesama pecinta film.</p>
+                <p>Bergabunglah dengan kami di Hackflix dan temukan keajaiban di balik layar! 
+                    Nikmati pengalaman tak terbatas dalam mengeksplorasi dunia film, sambil terhubung dengan komunitas yang sama-sama memiliki hasrat mendalam terhadap sinema. 
+                    Hackflix bukan sekadar platform informasi, tetapi juga rumah bagi para penggemar film sejati yang selalu haus akan cerita baru, fakta-fakta unik, 
+                    dan pengetahuan yang tidak terbatas.</p>
+                <p></p>
+                <p>Hackflix Team: Adella, Seno, Raffles</p>
+            </article>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&#169 hackflix, 2024</p>
+    </footer>
+    <script>
+        const article = document.querySelectorAll("article");
+            for (var i = 0; i < article.length; i++) {
+              article[i].className = "card";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Admin</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #294873;">
+      <a class="navbar-brand" href="#">News Admin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../public/index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto"> <!-- Moves items to the right -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><div id="username-display">Username</div></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../login/login.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>    
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="display-4">Welcome to News Admin Dashboard!</h1>
+      <p class="lead">Manage and publish the latest news with ease.</p>
+      <hr class="my-4">
+      <p>Explore the admin features to create, edit, and delete news articles. Leverage our utility classes for effective content management and layout customization.</p>
+      <div class="table-responsive">
+      <table id="data-table" class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Content</th>
+            <th width="150">Actions</th> <!-- Column for Edit and Delete buttons -->
+          </tr>
+        </thead>
+        <tbody id="data-table-body">
+          <!-- data will be populated here -->
+        </tbody>
+      </table>
+      </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content1">
+          <span class="close">&times;</span>
+          <h2 id="modal-title">Add New Record</h2>
+          <form id="addEditForm" >
+            <div class="form-row">
+              <div class="form-group col-md-2">
+                <label for="id">ID:</label>
+                <input type="text" class="form-control" id="id" placeholder="ID">
+              </div>
+              <div class="form-group col-md-5">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" placeholder="title">
+              </div>
+              <div class="form-group col-md-5">
+                <label for="author">Author:</label>
+                <input type="text" class="form-control" id="author" placeholder="author">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="id">Content:</label>
+                <textarea id="content" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <button class="btn btn-warning" type="button" id="submit-btn">Save Record</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <button class="btn btn-info" id="openModal">New Record</button>
+
+      <script src="script.js"></script>
+    </div>
+  </main>
+</body>
+</html>
